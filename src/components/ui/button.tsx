@@ -15,12 +15,18 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        emergency: "bg-gradient-emergency text-primary-foreground hover:shadow-emergency transform hover:scale-105 transition-all duration-200 animate-pulse-emergency",
+        medical: "bg-gradient-medical text-secondary-foreground hover:bg-secondary/90",
+        success: "bg-gradient-success text-success-foreground hover:bg-success/90",
+        warning: "bg-gradient-to-r from-warning to-orange-600 text-warning-foreground hover:from-orange-600 hover:to-warning",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
+        xl: "h-16 rounded-xl px-12 text-lg font-bold",
         icon: "h-10 w-10",
+        "emergency-sos": "h-24 w-24 rounded-full text-xl font-black",
       },
     },
     defaultVariants: {
